@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div id="nav">
+        <a href="Home.html" id="nav-ancor">
+            <div id="nav-ancor-image">
+                <img src="img/Logo.png" id="selfie">        
+            </div>
+        
+            <div id="ancor-text-name">Emily J Campell</div><br>
+            <div id="ancor-text-subtext">Illustrator*Designer*Creative</div>
+        </a>
+        <div id="nav-link-group">
+            <a id="nav-link" href="#blurb">Blurb</a>
+            <a id="nav-link" href="#instagram">Instagram</a>
+            <a id="nav-link" href="#resume">Resumé</a>
+            <a id="nav-link" href="#contact">Contact</a>
+            <a id="nav-link" href="#about">About</a>
+        </div>
+    </div>
+      
+    <!-- Navigation for art collections -->  
+    <div class="col-xs-12" align="center">
+        <div id="title" align="center">
+            <img src="img/Logo.png" id="logo">
+        </div>
+        <div class="col-sm-12" id="art-nav">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="#" id="icon"><span id="icon-text"> All</span></a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" onclick='getImages("ILLUSTRATION")'><img src="img/illustration-icon.png" id="icon"><span id="icon-text"> Illustration</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/design-icon.png" id="icon"><span id="icon-text"> Design</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="img/fine-art-icon.png" id="icon"><span id="icon-text"> Fine Art</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><div><img src="img/sketchbooks-icon.png" id="icon"><span id="icon-text"> Sketchbooks</span></div></a>
+              </li>
+            </ul>
+        </div>
+      
+    <!-- Hover-over thumbnails of work -->
+    <div id="art-collection">
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/collection-figure.jpg" id="thumbnail-img"class="hover-shadow">
+                <div class="overlay" onclick="openModal();currentSlide(1)">
+                    <div class="overlay-text">Figure Drawing<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-abstract.jpg" id="thumbnail-img" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Abstract<br><small>place holder</small></div>
+                </div>
+            </div>
+             
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-altered.jpg" id="thumbnail-img" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Altered<br><small>place holder</small></div>
+                </div>
+            </div>
+       
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-book.jpg" id="thumbnail-img" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Book<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-coffee01.jpg" id="thumbnail-img" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Coffee Stain<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-coffee02.jpg" id="thumbnail-img" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Coffee Stain II<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-ink.jpg" id="thumbnail-img" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Ink<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-lamp.jpg" id="thumbnail-img" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Lamp<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-lamp02.jpg" id="thumbnail-img" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Lamp II<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-oil01.jpg" id="thumbnail-img" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Oil<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-oil02.jpg" id="thumbnail-img" onclick="openModal();currentSlide(10)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Oil II<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-paint.jpg" id="thumbnail-img" onclick="openModal();currentSlide(11)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Painting<br><small>place holder</small></div>
+                </div>
+            </div>
+            
+            <div class="thumb-container">
+                <img src="img/Art/FINE_ART/thumbnail/thumb-print.jpg" id="thumbnail-img" onclick="openModal();currentSlide(12)" class="hover-shadow">
+                <div class="overlay">
+                    <div class="overlay-text">Print Making<br><small>place holder</small></div>
+                </div>
+            </div>
+    </div>
+      
+    <!-- Modal and slideshow for Lightbox -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="mySlides">
+                        <div id="modal-left-side">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        </div>
+                        
+                        <div>
+                            <div class="numbertext">1 / 4</div>
+                            <img src="img/Art/FINE_ART/DSC00930.JPG" id="modal-gallery-image">
+                        </div>
+                        
+                        <div id="modal-gallery-flavortext">
+                            <div id="flavor-text-title">CFC Icons</div>
+                            In the spirit of fitness, I wanted to create icons that had the same kind of commitment to health that tattoos do. Being a perminent part of a person's life, it was a playful way of having people identify with health messages.
+                        <div id="collection"></div>
+                        </div>
+                        
+                        <div id="modal-left-side">                        
+                            <button type="button"  class="close" aria-label="Close" onclick="closeModal()"><span aria-hidden="true">&times;</span></button>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="img/Art/FINE_ART/DSC03882.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/Art/FINE_ART/DSC03883.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="img/Art/FINE_ART/DSC03884.JPG" style="width:100%">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+      
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
