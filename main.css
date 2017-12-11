@@ -1,0 +1,322 @@
+body {
+    background-color: #383838;
+    color: #1CC19A;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+a:link {
+    color: #383838;
+}
+
+a:visited {
+    color: #383838;
+}
+
+a:hover {
+    color: #1CC19A;
+    text-decoration: none;
+}
+
+a:active {
+    color: #383838;
+}
+
+#nav {
+    height: 80px;
+    background-color: #FFFFFF;
+    border-bottom-style: solid;
+    border-bottom-color: #1CC19A;
+    border-bottom-width: 5px;
+    color: #383838;
+}
+
+#nav-ancor {
+    float: left;
+    padding-left: 36px;
+    padding-top: 15px;
+    
+}
+
+#nav-ancor-image {
+    float: left;
+    padding-left:0px;
+    padding-top: 4px;
+}
+
+#selfie {
+    height: 43px;
+    width: 41px;
+}
+
+#ancor-text-name {
+    float: left;
+    color: #1CC19A;
+    padding-left:15px;
+    font-size: 15pt;
+}
+
+#ancor-text-subtext {
+    float: left;
+    padding-left:15px;
+    font-size: 8.1pt;
+}
+
+#nav-link-group {
+    float: right;
+    font-size: 15pt;
+    padding-right: 36px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+#nav-link{
+    float: right;
+    padding-right: 15px;
+}
+
+#title {
+    align-content: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+#logo{
+    height: 130px;
+    width: auto;
+}
+
+#art-nav {
+    width: 850px;
+}
+
+#modal-left-side{
+    float: left;
+}
+
+#modal-right-side{
+    float: right;
+}
+
+a.nav-link:link {
+    color: #FFFFFF;
+}
+
+a.nav-link:visited {
+    color: #FFFFFF;
+}
+
+a.nav-link:hover {
+    color: #1CC19A;
+    text-decoration: none;
+}
+
+a.nav-link:active {
+    color: #FFFFFF;
+}
+
+.nav-item {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+#icon {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    
+}
+
+#icon-text {
+    font-size: 20pt;
+    vertical-align: middle;
+}
+
+#art-collection {
+    max-width: 820px;
+    height: auto;
+    display: inline-block;
+}
+
+.nav > li {
+    display: inline-block;
+    float:none;
+}
+
+#modal-gallery-image {
+    float: left;
+    padding: 0 0 0 0;
+    max-width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+#flavor {
+    vertical-align: middle;
+    column-count: 3;    
+}
+
+#modal-gallery-flavortext { 
+    text-align: left;
+    color: #383838;
+}
+
+#flavor-text-title {
+    font-size: 24pt;
+    font-weight: 800;
+}
+
+#thumbnail-img {
+}
+
+/* Edit below from w3school for lightbox */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: #383838;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #1CC19A;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(56, 56, 56, 0.7);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #383838;
+}
+
+.thumb-container:hover .overlay {
+  opacity: .80;
+}
+
+.thumb-container {
+  position: relative;
+  display: inline-block;
+  margin:5px;
+  cursor: pointer;
+    float: left;
+}
+
+.overlay-text {
+  color: rgba(255,255,255,1);
+  font-size: 15pt;
+  position: relative;
+  top: 30%;
+}
